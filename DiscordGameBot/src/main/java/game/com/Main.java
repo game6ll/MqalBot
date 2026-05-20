@@ -66,7 +66,7 @@ public class Main extends ListenerAdapter {
         String userMention = event.getAuthor().getAsMention();
 
         // 1. أمر بدء اللعبة (!مقال)
-        if (message.equals("!مقال") && !isGameActive) {
+        if (messageContent.equals("!مقال") && !isGameActive) { {
             if (isGameActive) {
                 event.getChannel().sendMessage("⚠️ فيه لعبة شغالة الحين! انتظر لين تنتهي.").queue();
                 return;
